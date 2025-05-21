@@ -1,0 +1,52 @@
+{
+  "id": "dh-system",
+  "title": "Daggerheart",
+  "description": "The Darrington Press / Critical Role system. All materials are copywritten by Critical Role and used via their community gaming license.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": 12,
+    "verified": 12
+  },
+  "authors": [{
+    "name": "RedAnchorite",
+  }],
+  "esmodules": ["mysystem.mjs"],
+  "styles": ["styles/system-styles.css"],
+  "packs": [{
+    "name": "monsters",
+    "label": "My Monsters",
+    "type": "Actor"
+  },
+  {
+    "name": "items",
+    "label": "My Items",
+    "type": "Item"
+  }],
+  "languages": [{
+    "lang": "en",
+    "name": "English",
+    "path": "lang/en.json"
+  }],
+  "documentTypes": {
+    "Actor": {
+      "hero": { "htmlFields": ["background.biography"] },
+      "villain": { "htmlFields": ["background.biography"] },
+      "pawn": {}
+    },
+    "Item": {
+      "weapon": {},
+      "spell": {}
+    }
+  },
+  "socket": false,
+  "initiative": "1d20",
+  "grid": {
+    "distance": 10,
+    "units": "ft"
+  },
+  "primaryTokenAttribute": "resources.health",
+  "secondaryTokenAttribute": "resources.power",
+  "url": "https://github.com/CravenAnchorite/dh-system/",
+  "manifest": "https://github.com/CravenAnchorite/dh-system/system.json",
+  "download": "https://your/packaged/download/archive.zip"
+}
